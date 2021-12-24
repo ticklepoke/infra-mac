@@ -1,0 +1,8 @@
+---
+downloads: ~/.ansible-downloads/
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
