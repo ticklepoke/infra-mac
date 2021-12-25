@@ -7,3 +7,7 @@
   roles:
     - role: geerlingguy.mac.homebrew
       tags: ["homebrew"]
+
+  tasks:
+    - import_tasks: tasks/npm.yml
+      tags: ["npm_packages"]

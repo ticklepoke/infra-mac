@@ -2,7 +2,7 @@
 
 > Inspired by https://github.com/TalkingQuickly/ansible-osx-setup and https://github.com/geerlingguy/mac-dev-playbook
 
-Ansible configuration for setting up a MacOS machine from scratch. After setting up many machines by hand, I decide to become a 10x developer by automating the process using Ansible.
+Ansible configuration for setting up a MacOS machine from scratch. After setting up many machines by hand, I decided to become a 10x developer by automating the process using Ansible.
 
 ## Getting Started
 

@@ -35,3 +35,16 @@ hombrew_cask_apps:
   - slack
   - the-unarchiver
   - zoom
+
+npm_packages:
+  - "@nestjs/cli"
+  - eslint
+  - neovim
+  - prettier
+  - serve
+  - tslib
+  - typescript-language-server
+  - typescript
+  - vscode-langservers-extracted
+  - yaml-language-server
+  - yarn
