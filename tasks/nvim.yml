@@ -1,3 +1,5 @@
 ---
 - name: Install neovim plugins
   command: nvim -u "$HOME/.config/nvim/plug.vim" -c "PlugInstall" -c ":qa!"
+  args:
+    creates: "$HOME/.config/nvim/plugged"
