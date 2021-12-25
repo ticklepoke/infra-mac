@@ -14,6 +14,10 @@
       tags: ["dotfiles"]
 
   tasks:
+    - import_tasks: tasks/zsh.yml
+      when: configure_zsh
+      tags: ["zsh"]
+
     - import_tasks: tasks/npm.yml
       when: configure_npm_globals
       tags: ["npm_packages"]
