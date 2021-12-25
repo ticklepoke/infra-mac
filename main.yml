@@ -6,8 +6,18 @@
 
   roles:
     - role: geerlingguy.mac.homebrew
+      when: configure_homebrew
       tags: ["homebrew"]
+
+    - role: geerlingguy.dotfiles
+      when: configure_dotfiles
+      tags: ["dotfiles"]
 
   tasks:
     - import_tasks: tasks/npm.yml
+      when: configure_npm_globals
       tags: ["npm_packages"]
+
+    - import_tasks: tasks/nvim.yml
+      when: configure_nvim
+      tags: ["neovim"]

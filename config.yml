@@ -1,6 +1,13 @@
 ---
 downloads: ~/.ansible-downloads/
 
+# Global feature flags
+configure_dotfiles: true
+configure_homebrew: true
+configure_npm_globals: true
+configure_nvim: true
+
+# Homebrew
 homebrew_installed_packages:
   - bat
   - exa
@@ -36,6 +43,7 @@ hombrew_cask_apps:
   - the-unarchiver
   - zoom
 
+# NPM global packages
 npm_packages:
   - "@nestjs/cli"
   - eslint
@@ -48,3 +56,16 @@ npm_packages:
   - vscode-langservers-extracted
   - yaml-language-server
   - yarn
+
+# Dotfiles
+dotfiles_repo: git@github.com:ticklepoke/dotfiles.git
+dotfiles_repo_version: darwin
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: "~/Documents/dotfiles"
+dotfiles_home: "~"
+dotfiles_files:
+  - .gitconfig
+  - .gitignore
+  - .zsh_alias
+  - .zshrc
+  - .config/nvim
