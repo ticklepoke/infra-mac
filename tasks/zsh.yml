@@ -1,8 +1,10 @@
 ---
 - name: Get the path to ZSH
   become: false
-  local_action: command which zsh
+  delegate_to: localhost
+  command: which zsh
   register: zsh_path
+  changed_when: false
 
 - name: "Ensure zsh is in allowed shells"
   lineinfile:

@@ -17,3 +17,5 @@ Ansible configuration for setting up a MacOS machine from scratch. After setting
 ### Verifying Current Machine State
 
 `./bin/apply` only applies the playbook without performing additional setup steps
+
+`./bin/check` runs steps in dry run mode without making changes
