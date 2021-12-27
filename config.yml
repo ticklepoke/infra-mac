@@ -27,6 +27,7 @@ homebrew_installed_packages:
   - rust-analyzer
   - rustup-init
   - zsh
+  - nmap
 
 homebrew_taps:
   - homebrew/core
