@@ -8,6 +8,17 @@ Ansible configuration for setting up a MacOS machine from scratch. After setting
 
 ### Fresh Machine
 
+Before setting up, run
+
+```
+xcode-select --install
+```
+
+Then, clone this repo
+```
+git clone https://github.com/ticklepoke/infra-mac
+```
+
 `./bin/boostrap` performs the following:
 
 - Install xcode tools

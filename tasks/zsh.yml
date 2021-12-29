@@ -17,6 +17,20 @@
   args:
     creates: "/Users/{{ lookup('env', 'USER') }}/.oh-my-zsh"
 
+- name: Ensure autouggestions are installed
+  git:
+    repo: https://github.com/zsh-users/zsh-autosuggestions 
+    dest: /Users/{{ lookup('env', 'USER') }}/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+    recursive: no
+    force: yes
+
+- name: Ensure p10k is installed
+  git:
+    repo: https://github.com/romkatv/powerlevel10k.git
+    dest: /Users/{{ lookup('env', 'USER') }}/.oh-my-zsh/custom/themes/powerlevel10k
+    depth: 1
+    force: yes
+
 - name: Set ZSH as the default shell
   shell: chsh -s $(which zsh) {{ lookup('env', 'USER') }}
   become: true
