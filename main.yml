@@ -4,6 +4,12 @@
   vars_files:
     - config.yml
 
+  pretasks:
+    - name: Ensure .config directory is created
+      file:
+        path: /User/{{ lookup('env', 'USER') }}/.config
+        state: directory
+
   roles:
     - role: geerlingguy.mac.homebrew
       when: configure_homebrew
