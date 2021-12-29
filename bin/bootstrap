@@ -4,11 +4,11 @@
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew install python@3.7
+brew install python@3.8
 
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+# curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 
-python3 get-pip.py
+# python3 get-pip.py
 
 sudo pip3 install --ignore-installed ansible
 
