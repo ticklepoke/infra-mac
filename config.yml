@@ -28,10 +28,12 @@ homebrew_installed_packages:
   - rustup-init
   - zsh
   - nmap
+  - git-smart-checkout
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - craciuncezar/tap
 
 homebrew_cask_appdir: /Applications
 

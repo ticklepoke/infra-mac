@@ -19,7 +19,7 @@
 
 - name: Ensure autouggestions are installed
   git:
-    repo: https://github.com/zsh-users/zsh-autosuggestions 
+    repo: https://github.com/zsh-users/zsh-autosuggestions
     dest: /Users/{{ lookup('env', 'USER') }}/.oh-my-zsh/custom/plugins/zsh-autosuggestions
     recursive: no
     force: yes
