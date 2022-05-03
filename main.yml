@@ -4,7 +4,7 @@
   vars_files:
     - config.yml
 
-  pretasks:
+  pre_tasks:
     - name: Ensure .config directory is created
       file:
         path: /User/{{ lookup('env', 'USER') }}/.config
