@@ -47,11 +47,12 @@ hombrew_cask_apps:
   - visual-studio-code
   - font-fira-code
   - insomnia
-  - macfuse
-  - pgadmin4
+  # - macfuse
+  # - pgadmin4
   - slack
   - the-unarchiver
   - zoom
+  - intellij-idea
 
 # NPM global packages
 npm_packages:
