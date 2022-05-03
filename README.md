@@ -19,7 +19,7 @@ Then, clone this repo
 git clone https://github.com/ticklepoke/infra-mac
 ```
 
-`./bin/boostrap` performs the following:
+`./bin/boostrap.sh` performs the following:
 
 - Install xcode tools
 - Install ansible
@@ -27,6 +27,6 @@ git clone https://github.com/ticklepoke/infra-mac
 
 ### Verifying Current Machine State
 
-`./bin/apply` only applies the playbook without performing additional setup steps
+`./bin/apply.sh` only applies the playbook without performing additional setup steps
 
-`./bin/check` runs steps in dry run mode without making changes
+`./bin/check.sh` runs steps in dry run mode without making changes
